@@ -6,11 +6,16 @@ A simple and responsive currency converter web app using HTML, CSS, and JavaScri
 - Convert between popular currencies
 - Real-time exchange rate API
 - Responsive design
+- Displays country flags next to currency codes
 
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript (Fetch API)
+
+## APIs Used
+- Exchange Rate API – for live currency conversion
+- Country Flags API – for flag images shown next to currency names
 
 ## How to Use
 1. Select the currencies from the dropdowns
