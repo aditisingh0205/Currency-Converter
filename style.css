@@ -1,0 +1,156 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            width: 100vw;
+            overflow-y: auto;
+
+
+
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            background-color: white;
+            color: black;
+            width: 100%;
+            border-radius: 25px;
+            max-width: 400px;
+            font-size: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin-top: 40px;
+
+
+        }
+
+        .dropdown {
+            display: flex;
+            gap: 12px;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 100%;
+
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .heading {
+            text-align: left;
+            width: 100%;
+        }
+
+        .amount p {
+            margin: 0 0 5px 0;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .select-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 4px 6px;
+        }
+
+        .from,
+        .to {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+        }
+
+        .from p,
+        .to p {
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+
+        select {
+            border: none;
+            cursor: pointer;
+            flex: 1;
+            appearance: auto;
+        }
+
+        .exchange {
+            width: 20%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+        }
+
+        .exchange img {
+            height: 28px;
+            width: 28px;
+
+        }
+
+        button {
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            padding: 9px 5px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 15px;
+            border: none;
+            color: white;
+            background-color: rgb(91, 27, 91);
+        }
+
+        .msg {
+            font-size: 20px;
+            color: #333;
+            margin-top: 10px;
+        }
+        @media (max-width: 500px) {
+  .dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .from, .to, .exchange {
+    width: 100%;
+  }
+}
+button:hover {
+    background-color: #4a0e4a; 
+    transform: scale(1.02);   
+    
+}
+button:focus {
+    outline: 2px solid #764ba2;
+    outline-offset: 2px;
+}
